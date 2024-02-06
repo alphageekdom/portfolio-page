@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Basic styles for the navbar */
+.navbar {
+  overflow: hidden;
+  padding: 10px 0;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo on the left */
+.logo {
+  float: left;
+  margin-left: 20px;
+}
+
+/* Navigation links on the right */
+.nav-links {
+  font-size: 1.3rem;
+}
+
+/* Style for individual navigation links */
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}
