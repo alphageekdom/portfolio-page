@@ -1,41 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-/* Basic styles for the navbar */
+body {
+  font-family: 'Protest Riot', sans-serif;
+}
+
+.container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
 .navbar {
-  overflow: hidden;
-  padding: 10px 0;
-  background-color: red;
+  padding: 0 20px;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #954535;
+}
+
+.navbar .container {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+/* Navbar Links */
+.nav-links {
+  font-size: 1.2rem;
+}
+
+/* Navbar Link */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 3rem;
+}
+
+/* Header/Hero */
+.header {
+  width: 100%;
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  height: 100vh;
+  color: white;
+}
+
+.header-left,
+.header-right {
+  width: 50%;
+}
+
+.header-left img,
+.header-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.header-left .left-content {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  text-align: center;
+}
+
+.header-left .left-content h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 1rem;
+}
+
+.header-right .right-content {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  text-align: center;
+}
+
+.header-right .right-content h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 1rem;
+}
+
+.ghost-button {
+  display: inline-block;
+  padding: 10px 50px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.ghost-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: left 0.3s ease-in-out;
+}
+
+.ghost-button:hover::before {
+  left: 0;
+  background-color: #fff;
+}
+
+.ghost-button:hover {
+  color: black;
+  z-index: 4;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+footer .container {
+  width: 100%;
+}
+
+/* Footer Columns */
+.footer-columns {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Logo on the left */
-.logo {
-  float: left;
-  margin-left: 20px;
+/* Footer Column */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
-/* Navigation links on the right */
-.nav-links {
-  font-size: 1.3rem;
+/* Footer Links */
+.footer-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  list-style: none;
 }
 
-/* Style for individual navigation links */
-.nav-links a {
-  color: black;
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-socials a,
+.footer-links a {
+  color: white;
   text-decoration: none;
-  padding: 10px 20px;
+}
+
+/* Footer Copyright */
+.copyright {
+  font-size: 1.1rem;
 }
 
 /* Media query for mobile responsiveness */
 @media screen and (max-width: 600px) {
-  .navbar {
+  .navbar .container {
+    width: 100%;
     flex-direction: column;
   }
 
