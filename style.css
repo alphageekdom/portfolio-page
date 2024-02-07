@@ -147,6 +147,48 @@ body {
   z-index: 0;
 }
 
+/* About */
+#about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#about .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+  height: 100vh;
+}
+
+#about .left-column,
+#about .right-column {
+  width: 100%;
+}
+
+#about .left-column {
+  text-align: center;
+}
+
+#about .left-column img {
+  height: 600px;
+  border: 5px solid white;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#about .right-column h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#about .right-column p {
+  line-height: 2;
+}
+
 /* Footer */
 footer {
   background-color: #000;
