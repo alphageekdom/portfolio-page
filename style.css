@@ -187,6 +187,7 @@ body {
 
 #about .left-column img {
   height: 600px;
+  width: 400px;
   border: 5px solid white;
   object-fit: cover;
   border-radius: 10px;
