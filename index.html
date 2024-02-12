@@ -27,6 +27,7 @@
             </div>
         </nav>
 
+        <!-- Hero -->
         <header>
             <div class="header-container">
                 <div class="header-left">
@@ -49,6 +50,7 @@
             </div>
         </header>
 
+        <!-- About -->
         <section id="about">
             <div class="container">
                 <div class="left-column">
@@ -56,7 +58,7 @@
                         alt="Portrait of myself, Star">
                 </div>
                 <div class="right-column">
-                    <h1>Hi, I'm Star</h1>
+                    <h1>Hi, I'm <span class="highlight">Star</span></h1>
                     <p>As a passionate Latina photographer, I am dedicated to capturing the beauty and emotion of every
                         portrait and wedding I shoot. With a keen eye for detail and a genuine <span
                             class="underline">love</span> for the art of
@@ -77,8 +79,9 @@
             </div>
         </section>
 
+        <!-- Portfolio -->
         <section id="portfolio">
-            <h1>My Work</h1>
+            <h1>My <span class="highlight">Work</span></h1>
             <div class="container grid-container">
                 <div class="image-container">
                     <img src="https://images.unsplash.com/photo-1517530094915-500495b15ade?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGhvdG9zaG9vdCUyMHBvcnRyYWl0c3xlbnwwfHwwfHx8MA%3D%3D"
@@ -116,8 +119,18 @@
             </div>
         </section>
 
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modalImg">
+            <div id="caption" class="caption"></div>
+        </div>
+
+
+        <!-- Services -->
         <section id="services">
-            <h1>Services Offered</h1>
+            <h1>Services <span class="highlight">Offered</span></h1>
             <div class="container">
                 <div class="card gold">
                     <img src="https://images.unsplash.com/photo-1522851276084-c6f32bde1f4d?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -157,7 +170,7 @@
 
         <!-- Reviews -->
         <section id="reviews">
-            <h1>Client Reviews</h1>
+            <h1>Client <span class="highlight">Reviews</span></h1>
             <div class="container">
                 <div class="review card">
                     <img src="https://images.unsplash.com/photo-1654175670346-6f554cd9426a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJpZGUlMjBwb3J0cmFpdHxlbnwwfHwwfHx8Mg%3D%3D"
@@ -201,13 +214,61 @@
             </div>
         </section>
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="modalImg">
-            <div id="caption" class="caption"></div>
-        </div>
+        <!-- Contact -->
+        <section id="contact">
+            <h1>Contact <span class="highlight">Me</span></h1>
+            <div class="container">
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <i class="fa-solid fa-location-dot contact-icon highlight"></i>
+                        <h2 class="contact-title">Location</h2>
+                        <p>1234 Sycamore Street
+                            Orange, CA 92865</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-phone contact-icon highlight"></i>
+                        <h2 class="contact-title">Phone</h2>
+                        <p>(714) 555-5555</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-regular fa-envelope contact-icon highlight"></i>
+                        <h2 class="contact-title">Email</h2>
+                        <p>info@starphotosllc.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-brands fa-instagram contact-icon highlight"></i>
+                        <h2 class="contact-title">Socials</h2>
+                        <p>@star.photography88</p>
+                    </div>
+                </div>
+                <div class="contact-columns">
+                    <div class="left-column">
+                        <h2>Get In Touch</h2>
+                        <p class="subtitle">Capturing Moments, Celebrating Heritage: Your Latina Lens to Timeless
+                            Memories!</p>
+                    </div>
+                    <div class="right-column">
+                        <div class="contact-form">
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <input type="text" name="fullname" placeholder="Full Name" required>
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="Email Address" required>
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" placeholder="Your Message" required></textarea>
+                                    <i class="fas fa-comment"></i>
+                                </div>
+                                <button type="submit">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <footer>
             <div class="container">
