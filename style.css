@@ -671,11 +671,10 @@ footer .container {
 }
 
 @media screen and (max-width: 780px) {
+  /* Footer */
   .footer-column h1 {
-    background-color: green;
     font-size: 1.1rem;
   }
-
   .footer-column .copyright {
     font-size: 1.1rem;
   }
@@ -692,6 +691,16 @@ footer .container {
     margin-bottom: 10px;
   }
 
+  /* Contact */
+  .contact-columns {
+    display: block;
+  }
+
+  .contact-columns .left-column p {
+    display: none;
+  }
+
+  /* Footer */
   footer {
     height: 100%;
     padding: 1rem 0;
