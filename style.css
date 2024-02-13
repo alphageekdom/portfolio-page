@@ -101,6 +101,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.header-left .left-content .hide {
+  display: none;
+}
+
 .header-right .right-content {
   position: absolute;
   top: 50%;
@@ -671,6 +675,20 @@ footer .container {
 }
 
 @media screen and (max-width: 780px) {
+  /* Hero */
+  .header-left,
+  .header-right {
+    width: 50%;
+  }
+
+  .header-left .left-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-right .right-content h1 {
+    font-size: 1.5rem;
+  }
+
   /* Reviews */
   #reviews {
     height: 100%;
@@ -698,6 +716,7 @@ footer .container {
 
 /* Media query for mobile responsiveness */
 @media screen and (max-width: 600px) {
+  /* Navbar */
   .navbar .container {
     width: 100%;
     flex-direction: column;
@@ -720,6 +739,31 @@ footer .container {
 
   .logo {
     margin-bottom: 10px;
+  }
+
+  /* Hero */
+  .header-container {
+    display: block;
+  }
+
+  .header-left {
+    width: 100%;
+    height: 100%;
+  }
+
+  .header-left .left-content {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    text-align: center;
+  }
+
+  .header-left .left-content h1 {
+    display: none;
+  }
+
+  .header-right {
+    display: none;
   }
 
   /* Reviews */
