@@ -356,22 +356,6 @@ body {
   border-radius: 30px;
 }
 
-.card.gold {
-  border: 10px solid transparent; /* Border color will change on hover */
-  border-image: url('/images/gold.jpg') 30 round;
-  border-radius: 30px;
-}
-
-.card.pink {
-  border: 10px solid transparent;
-  border-image: url('/images/pink.jpg') 30 round;
-}
-
-.card.silver {
-  border: 10px solid transparent;
-  border-image: url('/images/silver.jpg') 30 round;
-}
-
 .card img {
   width: 100%;
   height: auto;
@@ -393,6 +377,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 }
 
 .card-content .ghost-button {
@@ -427,7 +412,6 @@ body {
   display: inline-block;
   position: relative;
   width: 400px;
-  min-width: 400px;
   height: 400px;
   border-radius: 30px;
   overflow: hidden;
@@ -705,6 +689,11 @@ footer .container {
     width: 100%;
   }
 
+  /* Services */
+  #services .card {
+    width: 100%;
+  }
+
   /* Portfolio */
   #portfolio .grid-container {
     grid-template-columns: 1fr 1fr;
@@ -792,6 +781,12 @@ footer .container {
     display: none;
   }
 
+  /* Services */
+  #services {
+    height: 100%;
+    margin-bottom: 2rem;
+  }
+
   /* Portfolio */
   #portfolio .grid-container {
     grid-template-columns: 1fr;
@@ -808,8 +803,17 @@ footer .container {
   }
 
   /* Reviews */
-  .review {
-    width: 100%; /* Adjust as needed for smaller screens */
+  #reviews {
+    width: 100%;
+  }
+
+  .review .text {
+    width: 100%;
+    height: 100%;
+  }
+
+  .review .main-text {
+    width: 100%;
   }
 
   /* Contact */
@@ -819,6 +823,10 @@ footer .container {
 
   .contact-columns .left-column p {
     display: none;
+  }
+
+  .contact-form {
+    width: 100%;
   }
 
   /* Footer */
