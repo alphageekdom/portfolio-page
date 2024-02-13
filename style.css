@@ -705,6 +705,16 @@ footer .container {
     width: 100%;
   }
 
+  /* Portfolio */
+  #portfolio .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .close {
+    top: 5%;
+    right: 10%;
+  }
+
   /* Reviews */
   #reviews {
     height: 100%;
@@ -780,6 +790,21 @@ footer .container {
 
   .header-right {
     display: none;
+  }
+
+  /* Portfolio */
+  #portfolio .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Modal */
+  .modal {
+    width: 100%;
+    align-items: center;
+  }
+  .modal-content {
+    width: 100%;
+    height: auto;
   }
 
   /* Reviews */
