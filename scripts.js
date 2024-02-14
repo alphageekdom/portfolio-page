@@ -1,3 +1,4 @@
+// Get Full Year
 const currentDate = new Date().getFullYear();
 document.getElementById('current-year').innerText = currentDate;
 
@@ -26,3 +27,32 @@ span.onclick = function () {
   modal.style.display = 'none';
   document.body.style.overflow = 'auto';
 };
+
+// Navbar
+const hamburger = document.getElementById('hamburger');
+const close = document.getElementById('hamburger-close');
+const nav = document.querySelector('.nav');
+const navbar = document.querySelector('.navbar');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.add('active');
+  hamburger.style.display = 'none';
+  navbar.classList.add('sticky');
+  close.style.display = 'block';
+});
+
+close.addEventListener('click', () => {
+  hamburger.style.display = 'block';
+  nav.classList.remove('active');
+  navbar.classList.remove('sticky');
+  close.style.display = 'none';
+});
+
+// Change navbar background color on scroll
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove('sticky');
+  }
+});
