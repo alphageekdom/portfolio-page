@@ -56,3 +56,19 @@ window.addEventListener('scroll', () => {
     navbar.classList.remove('sticky');
   }
 });
+
+// Hide hamburger button when screen width is above 780px
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 780) {
+    hamburger.style.display = 'none';
+    close.style.display = 'none';
+  } else {
+    hamburger.style.display = 'block';
+  }
+
+  // Remove 'active' class from navbar if it's at the top of the page
+  if (window.scrollY === 0) {
+    nav.classList.remove('sticky');
+    nav.classList.remove('active');
+  }
+});
