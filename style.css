@@ -295,7 +295,7 @@ body {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 4; /* Sit on top */
+  z-index: 9; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
@@ -679,6 +679,20 @@ footer .container {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 1240px) {
+  /* Portfolio */
+  #portfolio .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* Portfolio */
+  #portfolio .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (max-width: 780px) {
   /* Navbar */
   .navbar .nav {
@@ -744,11 +758,6 @@ footer .container {
   /* Services */
   #services .card {
     width: 100%;
-  }
-
-  /* Portfolio */
-  #portfolio .grid-container {
-    grid-template-columns: 1fr 1fr;
   }
 
   .close {
