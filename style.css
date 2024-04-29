@@ -328,10 +328,10 @@ body {
 /* Close Button */
 .close {
   position: absolute;
-  top: 10%;
+  top: 9%;
   right: 30%;
   color: #f1f1f1;
-  font-size: 40px;
+  font-size: 3.5rem;
   font-weight: bold;
   transition: 0.3s;
 }
@@ -679,6 +679,13 @@ footer .container {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 1240px) and (orientation: landscape) {
+  .close {
+    top: 11%;
+    right: 22%;
+  }
+}
+
 @media screen and (max-width: 1240px) {
   /* Portfolio */
   #portfolio .grid-container {
@@ -687,6 +694,10 @@ footer .container {
   #services .container {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .close {
+    top: 6%;
+    right: 22%;
   }
 }
 
@@ -765,8 +776,8 @@ footer .container {
   }
 
   .close {
-    top: 5%;
-    right: 10%;
+    top: 8%;
+    right: 13%;
   }
 
   /* Reviews */
@@ -791,6 +802,13 @@ footer .container {
   }
   .footer-column .copyright {
     font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 950px) and (orientation: landscape) {
+  .modal {
+    height: 100vh;
+    overflow-y: scroll;
   }
 }
 
@@ -848,6 +866,11 @@ footer .container {
   .modal-content {
     width: 100%;
     height: auto;
+  }
+
+  .close {
+    top: 1%;
+    right: 5%;
   }
 
   /* Reviews */
